@@ -1,0 +1,21 @@
+{
+  "name": "tailwindcss-postcss-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "post": "postcss src/**/*.css --base src --dir dist --config postcss.config.js",
+    "post:dev": "postcss src/**/*.css --base src --dir dist --config postcss.config.js --watch --verbose",
+    "dev": "set NODE_ENV=development&&run-p *:dev",
+    "prod": "run-p post"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.2"
+  }
+}
